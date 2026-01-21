@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Sanchez Towing for 24/7 towing and roadside assistance in Howard County, Maryland. Fast response and transparent service.">
+    <title>Contact Us | Sanchez Towing</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Visual enhancements for Contact page */
+        .contact-icon {
+            font-size: 2.5rem;
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+        }
+        .contact-item {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+        .contact-item:hover {
+            transform: translateY(-5px);
+        }
+        /* Map Placeholder Style */
+        .map-placeholder {
+            background-color: #e9ecef;
+            height: 400px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 8px;
+            margin-top: 2rem;
+            color: #6c757d;
+        }
+        .map-icon {
+            font-size: 4rem;
+            color: var(--color-primary);
+            opacity: 0.5;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Sanchez Towing</h1>
+                </div>
+                <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="main-nav" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html" aria-current="page">Contact</a></li>
+                        </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="page-header">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>We're here 24/7 to help—reach out anytime</p>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt contact-icon"></i>
+                        <h3>Phone</h3>
+                        <p class="contact-large"><a href="tel:+10000000000">(000) 000-0000</a></p>
+                        <p>For emergencies or immediate assistance, call us directly. We answer 24/7.</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <h3>Email</h3>
+                        <p class="contact-large"><a href="mailto:placeholder@mail.com">placeholder@mail.com</a></p>
+                        <p>For non-urgent inquiries, quotes, or general questions, send us an email.</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-clock contact-icon"></i>
+                        <h3>Hours</h3>
+                        <p class="contact-large">24 Hours, 7 Days</p>
+                        <p>We operate weekends and holidays. Breakdowns don't take a day off.</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-tachometer-alt contact-icon"></i>
+                        <h3>Response Time</h3>
+                        <p class="contact-large">~30 Minutes</p>
+                        <p>Most calls in Howard County receive service within 30 minutes of dispatch.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="container">
+                <h3>Request a Tow or Get a Quote</h3>
+                <p>Fill out the form below and we'll respond as soon as possible. For immediate assistance, please call us directly.</p>
+
+                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required aria-required="true">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" required aria-required="true">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Needed <span class="required">*</span></label>
+                        <select id="service" name="service" required aria-required="true">
+                            <option value="">Select a service</option>
+                            <option value="towing">Towing</option>
+                            <option value="jump-start">Jump Start</option>
+                            <option value="tire-change">Tire Change</option>
+                            <option value="lockout">Lockout</option>
+                            <option value="fuel-delivery">Fuel Delivery</option>
+                            <option value="winch-out">Winch-Out / Recovery</option>
+                            <option value="other">Other / Not Sure</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Current Location or Pickup Address <span class="required">*</span></label>
+                        <input type="text" id="location" name="location" required aria-required="true" placeholder="Street address, city, or nearest landmark">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">Additional Details</label>
+                        <textarea id="notes" name="notes" rows="5" placeholder="Vehicle make/model, specific issue, destination, or any other relevant information"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i> Submit Request
+                    </button>
+                    <p class="form-note">Note: This form is for quotes and non-emergency requests. For immediate help, call <a href="tel:+10000000000">(000) 000-0000</a>.</p>
+                </form>
+            </div>
+        </section>
+
+        <section class="service-area-contact">
+            <div class="container">
+                <h3>Our Service Area</h3>
+                <p>We proudly serve Howard County, Maryland, including Columbia, Ellicott City, Laurel, Clarksville, Savage, and surrounding communities.</p>
+                
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt map-icon"></i>
+                    <h4>Serving Howard County & Beyond</h4>
+                    <p>Live GPS Tracking Available Upon Dispatch</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>Sanchez Towing</h2>
+                    <p>24/7 Towing & Roadside Assistance</p>
+                    <p>Serving Howard County, Maryland</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>Phone: <a href="tel:+10000000000">(000) 000-0000</a></p>
+                    <p>Email: <a href="mailto:placeholder@mail.com">placeholder@mail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-legal">
+                <p>&copy; 2026 Sanchez Towing. Fully insured and compliant with Maryland towing regulations.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
